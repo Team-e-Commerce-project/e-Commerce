@@ -1,1 +1,150 @@
-/* You can add global styles to this file, and also import other style files */
+.ml0 {
+  margin-left: 0 !important;
+}
+
+body {
+  background-color:#eee;
+}
+
+body {
+	background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAMAAAHpk4xqAAAAElBMVEX6+vrs7Ozr6+vu7u7v7+/t7e3EXgZMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAHRJREFUKM/VzrERA0EQAsGdAfJPWRG8c55wuyi4xt3CDuCW9pCDnvOYl9HEq8bkMojcwHLYwpnUXjTrKZoLLd4a7KVtG0U9ZYWFkQM0aZd5mQoKyYFqNsAbbcMo7AKbykbuX5In4pv2TT618tTi6Uaf6HvrB6gQAgdgFALaAAAAAElFTkSuQmCC');
+	background-repeat: repeat;
+	color: #6C6662;
+}
+
+.p0 {
+  padding: 0px !important;
+
+}
+
+.pl0 {
+  padding-left: 0px !important;
+
+}
+
+.pr0 {
+  padding-right: 0px !important;
+
+}
+
+.p5 {
+  padding: 5px !important;
+
+}
+
+.p10 {
+  padding: 10px !important;
+
+}
+
+.mb5 {
+  margin-bottom: 5px !important;
+
+}
+
+.text-gris {
+  color: #6e6b7b !important;
+
+}
+
+.mt-25 {
+  margin-top: -25px !important;
+
+}
+
+.mt05 {
+  margin-top: 5px !important;
+
+}
+
+.pt20 {
+  padding-top: 20px !important;
+
+}
+
+hr {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+
+}
+
+.text-align-left {
+  text-align: left !important;
+}
+
+.text-align-right {
+  text-align: right !important;
+}
+
+.text-align-center {
+  text-align: center !important;
+}
+
+.mt0 {
+  margin-top: 0 !important;
+}
+
+.align-center-justify-end {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+}
+
+.align-center-justify-start {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+}
+
+.align-end-justify-space-between {
+  display: flex !important;
+  align-items: flex-end !important;
+  justify-content: space-between !important;
+}
+
+.pt-0 {
+  padding-top: 0 !important;
+}
+
+.pb-0 {
+  padding-bottom: 0 !important;
+}
+
+
+.pt-6 {
+  padding-top: 6px;
+}
+
+.mt-6 {
+  margin-top: 6px;
+}
+
+.align-right {
+  text-align: right !important;
+}
+
+.fieldset {
+  background: white;
+  border: 0 none;
+  border-radius: 0px;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 0;
+  /*stacking fieldsets above each other*/
+  position: relative;
+}
+
+.fieldset .content-header, .declaration-form .content-header, .bg-light-green{
+  background-color: #e9efdf;
+}
+.fieldset .content-header h5, .declaration-form .content-header h5{
+  padding: 10px !important;
+  color: #227300;
+  font-weight: 800;
+}
+
+.card{
+  margin-bottom: 0.5rem !important;
+  box-shadow: 0 1px 8px 0 rgb(34 41 47 / 20%) !important;
+}

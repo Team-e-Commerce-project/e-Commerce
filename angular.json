@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Web_site_e-Commerce": {
+    "e-Commerce": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/web-site-e-commerce",
+            "outputPath": "dist/e-commerce",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -31,9 +31,13 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/bootstrap/dist/js/bootstrap.min.js"
+
+            ]
           },
           "configurations": {
             "production": {
@@ -72,10 +76,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "Web_site_e-Commerce:build:production"
+              "browserTarget": "e-Commerce:build:production"
             },
             "development": {
-              "browserTarget": "Web_site_e-Commerce:build:development"
+              "browserTarget": "e-Commerce:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -83,7 +87,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Web_site_e-Commerce:build"
+            "browserTarget": "e-Commerce:build"
           }
         },
         "test": {
@@ -107,5 +111,5 @@
       }
     }
   },
-  "defaultProject": "Web_site_e-Commerce"
+  "defaultProject": "e-Commerce"
 }
