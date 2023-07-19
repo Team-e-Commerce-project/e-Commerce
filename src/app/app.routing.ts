@@ -1,23 +1,22 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
-import { DashboardComponent } from "./Users/dashboard/dashboard.component";
-import { ProductsComponent } from "./Users/products/products.component";
 import { AppRoutesName } from "./app.routes.name";
-import { DetailProductComponent } from "./Users/detail-product/detail-product.component";
 
 const routes: Routes =[
-   {
-    path : '**',
-    component : DashboardComponent,
-   },
-   {
-    path : AppRoutesName.products,
-    component : ProductsComponent,
-   },
-   {
-    path : AppRoutesName.detail,
-    component : DetailProductComponent,
-   }
+  {
+    path: AppRoutesName.user,
+    loadChildren: () => import('./Users/users.module').then(m => m.UsersModule),
+  },
+
+  {
+    path: '',
+    redirectTo: AppRoutesName.user,
+    pathMatch: 'full'
+  },
+  {
+    path: '**',
+    redirectTo: '/user'
+  }
 ];
 
 @NgModule({
